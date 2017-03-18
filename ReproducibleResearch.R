@@ -22,7 +22,7 @@ echo = TRUE
 su <- tapply(activite$steps, activite$date, sum, na.rm=T)
 
 echo = TRUE
-hist(su, xlab = "Relevé des étapes par jour", ylab = "Fréquence", main = "Histogramme des étapes par jour")
+hist(su, col="green", xlab = "Relevé des étapes par jour", ylab = "Fréquence", main = "Histogramme des étapes par jour")
 
 echo = TRUE
 mean_su <- round(mean(su))
@@ -52,7 +52,7 @@ for (i in 1:nrow(activite)){
 
 echo = TRUE
 su2 <- tapply(activite2$steps, activite2$date, sum, na.rm=T)
-hist(su2, xlab = "Relevé des étapes par jour", ylab = "Fréquence",main = "Histogramme des étapes par jour")
+hist(su2, col="blue", xlab = "Relevé des étapes par jour", ylab = "Fréquence",main = "Histogramme des étapes par jour")
 
 mean_su2 <- round(mean(su2))
 median_su2 <- round(median(su2))
